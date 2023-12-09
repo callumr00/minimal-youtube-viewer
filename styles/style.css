@@ -1,0 +1,117 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #FFFFFF;
+  margin: 0 1rem;
+  max-width: 600px;
+}
+
+footer {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.search__form {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 60px;
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+}
+.search__form--container {
+  height: 100%;
+  width: 540px;
+  background-color: #FFFFFF;
+  border-radius: 50px 0 0 50px;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 1px 2px #eeeeee;
+  display: flex;
+}
+.search__form--input {
+  height: 80%;
+  width: 100%;
+  padding-top: 0.225rem;
+  margin: auto 0.75rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #111111;
+}
+.search__form--input::-moz-placeholder {
+  color: #aaaaaa;
+}
+.search__form--input::placeholder {
+  color: #aaaaaa;
+}
+.search__form--button {
+  height: 100%;
+  width: 60px;
+  background-color: #f8f8f8;
+  border-radius: 0 50px 50px 0;
+  border: 1px solid #cccccc;
+  border-left: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-duration: 80ms;
+}
+.search__form--button:hover {
+  background-color: #f0f0f0;
+  border-color: #bfbfbf;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.search__form--button:active {
+  background-color: #e9e9e9;
+}
+.search__form--icon {
+  height: 1.5rem;
+  width: 100%;
+}
+
+.search__result {
+  color: #111111;
+  text-decoration: none;
+  flex: 1;
+}
+.search__result--container {
+  margin: 2rem 0;
+}
+.search__result--info, .search__result--author {
+  color: #aaaaaa;
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
+}
+
+.video__container {
+  position: relative;
+  padding-top: 56.25%;
+}
+.video__player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(0%, 68.359375%);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */
