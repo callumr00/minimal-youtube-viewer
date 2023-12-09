@@ -65,7 +65,7 @@ if (query) {
             // Create search result element.
             const search_result = document.createElement("a");
             search_result.classList.add("search__result");
-            search_result.href = `watch.html?v=${video.videoId}`
+            search_result.href = `watch?v=${video.videoId}`
     
             // Create container element and append to search result.
             const container = document.createElement("div");
