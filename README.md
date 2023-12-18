@@ -12,7 +12,7 @@ This Front-End seeks to remove the distraction so that you can use YouTube with 
 
 It works by using the [YouTube Data API](https://developers.google.com/youtube/v3) to return a list of search results for a given query and the [ReturnYoutubeDislike API](https://www.returnyoutubedislike.com/) for additional video statistics. Videos are then displayed by embedding the video with the selected ID on the page.
 
-It is recommended that this is used with an ad block, such as [uBlock Origin](https://ublockorigin.com/).
+It is recommended that this is used with an ad blocker, such as [uBlock Origin](https://ublockorigin.com/).
 
 There is purposefully no customization options, although any requests will be considered.
 
