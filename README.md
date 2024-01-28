@@ -18,7 +18,21 @@ This Front-End seeks to remove the distraction so that you can use YouTube with 
 ### How?
 It works by using the [YouTube Data API](https://developers.google.com/youtube/v3) to return a list of search results for a given query and the [ReturnYoutubeDislike API](https://www.returnyoutubedislike.com/) for additional video statistics. Videos are then displayed by embedding the video with the selected ID on the page.
 
-### Extras
-- There is purposefully no customization options, although any requests will be considered.
-- It is recommended that this is used with an ad blocker, such as [uBlock Origin](https://ublockorigin.com/).
-- If you use [Kagi](https://kagi.com) as your search engine, you can go to the [Redirects Settings](https://kagi.com/settings?p=redirects) and add `^https://www.youtube.com(.*)|https://callumr00.github.io/minimal-youtube-viewer$1` to redirect all YouTube search results to Minimal YouTube Viewer. Note that only the Home Page, Search Results, and Video Player are supported (no channels, playlists, etc).
+
+### Next Steps: Blocking Ads
+Install an adblocker, such as [uBlock Origin](https://ublockorigin.com/).
+
+### Next Steps: Adding Redirection
+You can add redirects to automatically use Minimal YouTube Viewer for all YouTube links.
+
+Note that only the Home Page, Search Results, and Video Player are supported (no channels, playlists, etc).
+
+**Firefox Web Browser**\
+To redirect all links to YouTube, install the [Redirector](https://addons.mozilla.org/en-US/firefox/addon/redirector/) addon and add a new redirect:
+<p align="center">
+  <img src="img/redirector-settings.jpg" width="500" alt="Redirector settings">
+</p>
+
+**Kagi Search Engine**\
+  To redirect all links to YouTube within web search results, go to the <a href="https://kagi.com/settings?p=redirects" target="_blank">Redirects Settings</a> and add a new redirect rule:\
+  ```^https://www.youtube.com(.*)|https://callumr00.github.io/minimal-youtube-viewer$1```
